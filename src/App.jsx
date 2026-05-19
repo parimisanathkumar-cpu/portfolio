@@ -261,7 +261,7 @@ function App() {
           <FadeIn>
             <div className="hero-section" style={{ marginBottom: 0, alignItems: 'start' }}>
               <div>
-                <h2 className="title" style={{ fontSize: '3rem' }}>Let's <span style={{ background: 'var(--gradient-text)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>Connect</span></h2>
+                <h2 className="title" style={{ fontSize: '3rem' }}>Let's <span style={{ background: 'var(--gradient-text)', backgroundClip: 'text', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>Connect</span></h2>
                 <p className="subtitle">Always interested in new projects, collaborations, and conversations about software development.</p>
                 <a href={data.socials[0].url} className="btn-primary">
                   Drop an Email <ExternalLink size={20} />
