@@ -44,19 +44,19 @@ const data = {
     {
       name: "Resonance",
       description: "AI-assisted cross-platform music streaming application using React, Vite, Capacitor, Django REST APIs, and YouTube Data API v3.",
-      github: "https://github.com/sanathparimi",
+      github: "https://github.com/parimisanathkumar-cpu/Resonance",
       icon: <Layers size={28} />
     },
     {
       name: "Secure File Storage",
       description: "Full-stack application using Angular, Spring Boot, and SQL with scalable REST/GraphQL APIs. Implemented end-to-end encryption (AES).",
-      github: "https://github.com/sanathparimi",
+      github: "https://github.com/parimisanathkumar-cpu/Secure-Web-App",
       icon: <Briefcase size={28} />
     },
     {
       name: "Reddit Clone",
       description: "Customer-oriented full-stack application using React, Spring Boot, SQL, designing scalable REST APIs and backend services.",
-      github: "https://github.com/sanathparimi",
+      github: "https://github.com/parimisanathkumar-cpu/Spring-boot-reddit-clone",
       icon: <User size={28} />
     }
   ],
