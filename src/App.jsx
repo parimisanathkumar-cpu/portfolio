@@ -48,6 +48,12 @@ const data = {
       icon: <Layers size={28} />
     },
     {
+      name: "Admin Dashboard",
+      description: "Responsive dashboard built with React, Material UI, Nivo, and FullCalendar. Features dynamic theming, custom charts, reusable router flows, and highly optimized rendering performance to minimize re-renders.",
+      github: "https://github.com/parimisanathkumar-cpu/react-admin-dashboard",
+      icon: <Code2 size={28} />
+    },
+    {
       name: "Secure File Storage",
       description: "Full-stack application using Angular, Spring Boot, and SQL with scalable REST/GraphQL APIs. Implemented end-to-end encryption (AES).",
       github: "https://github.com/parimisanathkumar-cpu/Secure-Web-App",
@@ -130,7 +136,7 @@ function App() {
         <section id="home" className="hero-section">
           <FadeIn>
             <h1 className="title">{data.name}</h1>
-            <p className="subtitle" style={{ fontSize: '1.5rem', color: '#111827' }}>
+            <p className="subtitle" style={{ fontSize: '1.5rem', color: 'var(--text-primary)' }}>
               {data.heroText}
             </p>
             <div className="status-indicator">
@@ -144,9 +150,12 @@ function App() {
           </FadeIn>
 
           <FadeIn delay={0.2}>
+            <div className="profile-container">
+              <img src="/profile.jpg" alt={data.name} className="profile-img" />
+            </div>
             <div className="glass-card" style={{ marginBottom: '2rem' }}>
               <p style={{ color: 'var(--text-secondary)', fontSize: '0.875rem', marginBottom: '0.5rem', fontWeight: 600 }}>Currently</p>
-              <p style={{ fontWeight: 600, color: '#111827' }}>{data.currentRole}</p>
+              <p style={{ fontWeight: 600, color: 'var(--text-primary)' }}>{data.currentRole}</p>
             </div>
             <div className="glass-card">
               <p style={{ color: 'var(--text-secondary)', fontSize: '0.875rem', marginBottom: '1rem', fontWeight: 600 }}>Focus</p>
@@ -190,32 +199,33 @@ function App() {
             <div className="resume-grid">
               <div>
                 <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginBottom: '2rem' }}>
-                  <a href="https://drive.google.com/drive/folders/1fyHMCFezEMGWCZICMdLiHC-47qt2zpkm" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: '#111827' }}>
+                  <a href="https://drive.google.com/file/d/1p5mqK1_3yJcSj5goN-K1TUjLEhlUODxV/view?usp=sharing" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'var(--text-primary)' }}>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontWeight: 600, marginBottom: '0.25rem' }}>
-                      <ExternalLink size={16} /> View
+                      <ExternalLink size={16} /> View on Drive
                     </div>
                     <div style={{ fontSize: '0.75rem', color: 'var(--text-secondary)' }}>May 2026</div>
                   </a>
-                  <a href="/resume.pdf" download style={{ textDecoration: 'none', color: '#111827' }}>
+                  <a href="https://drive.google.com/uc?export=download&id=1p5mqK1_3yJcSj5goN-K1TUjLEhlUODxV" style={{ textDecoration: 'none', color: 'var(--text-primary)' }}>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontWeight: 600, marginBottom: '0.25rem' }}>
                       <FaDownload size={16} /> Download
                     </div>
                     <div style={{ fontSize: '0.75rem', color: 'var(--text-secondary)' }}>
                       May 2026<br />
-                      PDF Format
+                      Direct PDF Link
                     </div>
                   </a>
                 </div>
-                <p style={{ fontSize: '1.05rem', lineHeight: '1.7', color: '#374151', fontWeight: 500 }}>
+                <p style={{ fontSize: '1.05rem', lineHeight: '1.7', color: 'var(--text-secondary)', fontWeight: 500 }}>
                   Full Stack Software Engineer with extensive experience building scalable, high-performance applications using React, TypeScript, Java, Spring Boot, and AWS. Focused on delivering reliable, modular code for large-scale systems and optimizing REST APIs handling thousands of requests daily. Passionate about improving system performance, leveraging cloud infrastructure (Terraform, AWS), and collaborating cross-functionally to ship impactful features.
                 </p>
               </div>
+
               <div className="glass-card" style={{ minHeight: '850px', padding: 0, overflow: 'hidden', display: 'flex', flexDirection: 'column' }}>
-                <div style={{ padding: '1rem 1.5rem', background: 'rgba(255,255,255,0.4)', borderBottom: '1px solid var(--glass-border)', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                  <span style={{ fontWeight: 600, color: '#111827' }}>Resume Preview</span>
-                  <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" style={{ fontSize: '0.875rem', fontWeight: 600, color: 'var(--accent-color)' }}>Open PDF</a>
+                <div style={{ padding: '1rem 1.5rem', background: 'rgba(255,255,255,0.02)', borderBottom: '1px solid var(--glass-border)', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                  <span style={{ fontWeight: 600, color: 'var(--text-primary)' }}>Resume</span>
+                  <span style={{ fontSize: '0.875rem', fontWeight: 600, color: 'var(--accent-color)' }}>PDF</span>
                 </div>
-                <iframe src="/resume.pdf#zoom=FitH" style={{ width: '100%', flex: 1, border: 'none', minHeight: '800px' }} title="Resume PDF Preview" />
+                <iframe src="https://drive.google.com/file/d/1p5mqK1_3yJcSj5goN-K1TUjLEhlUODxV/preview" style={{ width: '100%', flex: 1, border: 'none', minHeight: '800px' }} title="Resume PDF Preview" />
               </div>
             </div>
           </FadeIn>
@@ -259,7 +269,7 @@ function App() {
               </div>
               <div className="connect-grid">
                 {data.socials.map((social, index) => (
-                  <a key={index} href={social.url} target="_blank" rel="noopener noreferrer" className="glass-card social-card" style={{ padding: '1rem', textDecoration: 'none', color: '#111827' }}>
+                  <a key={index} href={social.url} target="_blank" rel="noopener noreferrer" className="glass-card social-card" style={{ padding: '1rem', textDecoration: 'none', color: 'var(--text-primary)' }}>
                     <div className="social-icon-wrapper">
                       {social.icon}
                     </div>
