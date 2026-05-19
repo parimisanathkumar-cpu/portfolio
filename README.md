@@ -2,7 +2,7 @@
 
 Welcome to the repository of my personal developer portfolio. Built with a modern, luxury **Obsidian & Gold Glassmorphism** aesthetic, this site showcases my professional experience, technical focus areas, personal projects, and interactive resume.
 
-[![Portfolio Live](https://img.shields.io/badge/Portfolio-Live-amber?style=for-the-badge&logo=react&logoColor=black)](https://github.com/parimisanathkumar-cpu)
+[![Portfolio Live](https://img.shields.io/badge/Portfolio-Live-amber?style=for-the-badge&logo=react&logoColor=black)](https://parimisanathkumar-cpu.github.io/portfolio/)
 [![Vite](https://img.shields.io/badge/Vite-5.x-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vite.dev/)
 [![React](https://img.shields.io/badge/React-18.x-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)

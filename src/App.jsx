@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { ExternalLink, Code2, Download, Briefcase, User, Layers, Mail } from 'lucide-react';
+import { ExternalLink, Code2, Download, Briefcase, User, Layers, Mail, Globe } from 'lucide-react';
 import { FaGithub, FaLinkedin, FaEnvelope, FaDownload } from 'react-icons/fa';
 import './index.css';
 
@@ -120,7 +120,8 @@ const data = {
   socials: [
     { name: "Email", handle: "sanathkumarparimi999...", url: "mailto:sanathkumarparimi999@gmail.com", icon: <FaEnvelope size={24} /> },
     { name: "GitHub", handle: "@sanathparimi", url: "https://github.com/parimisanathkumar-cpu", icon: <FaGithub size={24} /> },
-    { name: "LinkedIn", handle: "@sanathparimi", url: "https://www.linkedin.com/in/sanath-kumar-parimi-936341192/", icon: <FaLinkedin size={24} /> }
+    { name: "LinkedIn", handle: "@sanathparimi", url: "https://www.linkedin.com/in/sanath-kumar-parimi-936341192/", icon: <FaLinkedin size={24} /> },
+    { name: "Website", handle: "Live Portfolio", url: "https://parimisanathkumar-cpu.github.io/portfolio/", icon: <Globe size={24} /> }
   ],
   focus: [
     "JavaScript", "TypeScript", "ReactJS", "Next.js", "Java", "Spring Boot", "Node.js", "GraphQL", "Python", "AWS", "Docker", "PostgreSQL", "Redis"
@@ -250,13 +251,13 @@ function App() {
             <div className="resume-grid">
               <div>
                 <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginBottom: '2rem' }}>
-                  <a href="https://drive.google.com/file/d/1p5mqK1_3yJcSj5goN-K1TUjLEhlUODxV/view?usp=sharing" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'var(--text-primary)' }}>
+                  <a href="https://drive.google.com/file/d/1wplJZNWH4dz8es5PBBRT41SfSodXqdrG/view?usp=sharing" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'var(--text-primary)' }}>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontWeight: 600, marginBottom: '0.25rem' }}>
                       <ExternalLink size={16} /> View on Drive
                     </div>
                     <div style={{ fontSize: '0.75rem', color: 'var(--text-secondary)' }}>May 2026</div>
                   </a>
-                  <a href="https://drive.google.com/uc?export=download&id=1p5mqK1_3yJcSj5goN-K1TUjLEhlUODxV" style={{ textDecoration: 'none', color: 'var(--text-primary)' }}>
+                  <a href="https://drive.google.com/uc?export=download&id=1wplJZNWH4dz8es5PBBRT41SfSodXqdrG" style={{ textDecoration: 'none', color: 'var(--text-primary)' }}>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontWeight: 600, marginBottom: '0.25rem' }}>
                       <FaDownload size={16} /> Download
                     </div>
@@ -276,7 +277,7 @@ function App() {
                   <span style={{ fontWeight: 600, color: 'var(--text-primary)' }}>Resume</span>
                   <span style={{ fontSize: '0.875rem', fontWeight: 600, color: 'var(--accent-color)' }}>PDF</span>
                 </div>
-                <iframe src="https://drive.google.com/file/d/1p5mqK1_3yJcSj5goN-K1TUjLEhlUODxV/preview" style={{ width: '100%', flex: 1, border: 'none', minHeight: '800px' }} title="Resume PDF Preview" />
+                <iframe src="https://drive.google.com/file/d/1wplJZNWH4dz8es5PBBRT41SfSodXqdrG/preview" style={{ width: '100%', flex: 1, border: 'none', minHeight: '800px' }} title="Resume PDF Preview" />
               </div>
             </div>
           </FadeIn>
