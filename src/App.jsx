@@ -202,7 +202,7 @@ function App() {
 
           <FadeIn delay={0.2}>
             <div className="profile-container">
-              <img src="/profile.jpg" alt={data.name} className="profile-img" />
+              <img src={`${import.meta.env.BASE_URL}profile.jpg`} alt={data.name} className="profile-img" />
             </div>
             <div className="glass-card" style={{ marginBottom: '2rem' }}>
               <p style={{ color: 'var(--text-secondary)', fontSize: '0.875rem', marginBottom: '0.5rem', fontWeight: 600 }}>Currently</p>
