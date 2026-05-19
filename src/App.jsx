@@ -4,6 +4,57 @@ import { ExternalLink, Code2, Download, Briefcase, User, Layers, Mail } from 'lu
 import { FaGithub, FaLinkedin, FaEnvelope, FaDownload } from 'react-icons/fa';
 import './index.css';
 
+// Premium custom Resonance logo matching the soundwave circular beacon from the screenshot
+const ResonanceLogo = ({ size = 28 }) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    style={{ display: 'block' }}
+  >
+    {/* Outer boundary circle representing the music player logo frame */}
+    <circle cx="12" cy="12" r="10" />
+    {/* Concentric resonance waves propagating outwards from a central core */}
+    <path d="M8 12c0-2.2 1.8-4 4-4s4 1.8 4 4" />
+    <path d="M10 12c0-1.1 0.9-2 2-2s2 0.9 2 2" />
+    <circle cx="12" cy="12" r="1.2" fill="currentColor" />
+  </svg>
+);
+
+// High-fidelity custom Reddit logo stylized as an outline wireframe matching the current luxury design aesthetic
+const RedditLogo = ({ size = 28 }) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    style={{ display: 'block' }}
+  >
+    {/* Snoo Head */}
+    <ellipse cx="12" cy="13" rx="7" ry="5" />
+    {/* Snoo Eyes */}
+    <circle cx="9.5" cy="13" r="1" fill="currentColor" />
+    <circle cx="14.5" cy="13" r="1" fill="currentColor" />
+    {/* Snoo Smile */}
+    <path d="M10 15.5c1 0.8 3 0.8 4 0" />
+    {/* Snoo Ears */}
+    <circle cx="4.5" cy="13" r="1.5" />
+    <circle cx="19.5" cy="13" r="1.5" />
+    {/* Snoo Antenna */}
+    <path d="M12 8c0-2.5 1.5-3 3-2" />
+    <circle cx="15.5" cy="5" r="1.2" fill="currentColor" />
+  </svg>
+);
+
 const data = {
   name: "Sanath Kumar",
   title: "Full Stack Software Engineer",
@@ -45,7 +96,7 @@ const data = {
       name: "Resonance",
       description: "AI-assisted cross-platform music streaming application using React, Vite, Capacitor, Django REST APIs, and YouTube Data API v3.",
       github: "https://github.com/parimisanathkumar-cpu/Resonance",
-      icon: <Layers size={28} />
+      icon: <ResonanceLogo size={28} />
     },
     {
       name: "Admin Dashboard",
@@ -63,7 +114,7 @@ const data = {
       name: "Reddit Clone",
       description: "Customer-oriented full-stack application using React, Spring Boot, SQL, designing scalable REST APIs and backend services.",
       github: "https://github.com/parimisanathkumar-cpu/Spring-boot-reddit-clone",
-      icon: <User size={28} />
+      icon: <RedditLogo size={28} />
     }
   ],
   socials: [
